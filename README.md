@@ -17,8 +17,8 @@ SRDDIM is a cutting-edge deep learning model that combines the strengths of supe
 
 The SRDDIM model leverages the power of denoising diffusion models to iteratively refine and enhance the image resolution. The process involves adding noise to the low-resolution image and then using the model to denoise and super-resolve the image iteratively.
 
-![SRDDIM Architecture](images/srddim_architecture.png)
-
+![SRDDIM Architecture](image/ddpm_pic.PNG)
+![SRDDIM Architecture](image/ddim_pic.PNG)
 
 ## Results
 
