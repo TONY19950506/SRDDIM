@@ -1,28 +1,37 @@
-# SRDDIM
+# SRDDIM: Super-Resolution Denoising Diffusion Implicit Models
 
-**SRDDIM** 是一個用於超分辨率重建的擴散模型項目。此項目利用 Denoising Diffusion Implicit Models (DDIM) 來提高衛星圖像的分辨率，旨在為環境監測、災害管理、城市規劃和安全監控等領域提供高精度的圖像增強技術。
+This repository contains the implementation of the SRDDIM (Super-Resolution Denoising Diffusion Implicit Models) for image super-resolution.
 
-## 目錄
+## Overview
 
-- [目的](#目的)
-- [方法](#方法)
-- [結論](#結論)
+SRDDIM is a cutting-edge deep learning model that combines the strengths of super-resolution and denoising diffusion models to enhance the resolution and quality of low-resolution images. This method is particularly effective in producing realistic and high-quality images, making it suitable for applications in various fields such as medical imaging, satellite imaging, and more.
+
+## Features
+
+- Implementation of the SRDDIM architecture.
+- Pre-trained models for quick inference.
+- Scripts for training the SRDDIM model on custom datasets.
+- Evaluation metrics for comparing performance with other super-resolution methods.
+
+## Architecture
+
+The SRDDIM model leverages the power of denoising diffusion models to iteratively refine and enhance the image resolution. The process involves adding noise to the low-resolution image and then using the model to denoise and super-resolve the image iteratively.
+
+![SRDDIM Architecture](images/srddim_architecture.png)
 
 
-## 目的
+## Results
 
-因為傳統的差值法對於需要結構的圖片超解析度效果不好，所以我們提出了SRDDIM (Super-Resolution Diffusion Denoising Implicit Models)，一個基於DDIM的超分辨率重建模型。通過此模型，用戶可以將低分辨率的衛星圖像轉換為高分辨率的圖像，從而提高圖像的清晰度和細節水平。該技術在多個領域具有廣泛的應用前景，如環境監測、災害管理、城市規劃和安全監控等。
+Example results obtained using the SRDDIM model:
 
-## 方法
+| Low-Resolution Image | Super-Resolution Image | Ground Truth |
+|----------------------|------------------------|--------------|
+| ![LR](images/lr.png) | ![SR](images/sr.png) | ![GT](images/gt.png) |
 
-### 傳統方法 - Bicubic
+## References
 
-Bicubic 插值方法是通過加權平均來進行圖像放大的，適用於處理較平滑的圖像。
+- [Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502)
+- [Super-Resolution Using Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2104.07636)
 
-### 我們的方法 - SRDDIM
 
-SRDDIM 利用 Denoising Diffusion Implicit Models (DDIM) 框架進行圖像超分辨率重建。這一框架在反向過程中不添加隨機噪聲，確保從相同的低分辨率輸入生成一致的高分辨率輸出。
-
-## 結論
-SRDDIM 框架在反向過程中不添加隨機噪聲，確保從相同的低分辨率輸入生成一致的高分辨率輸出，顯著提高了圖像的清晰度和細節水平。我們的方法在多個應用場景中展示了卓越的性能，如環境監測、災害管理、城市規劃和安全監控等，並通過高峰值信噪比（PSNR）和良好的結構相似性指數（SSIM）證明了其有效性。
 
