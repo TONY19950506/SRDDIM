@@ -28,6 +28,9 @@ Example results obtained using the SRDDIM model:
 |----------------------|------------------------|--------------|
 | ![LR](image/730_set_16_16.jpg) | ![SR](image/730_set_4_4.jpg) | ![GT](image/730_set.jpg) |
 
+
+![EX](image/EX.PNG)
+
 ## References
 
 - [Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502)
