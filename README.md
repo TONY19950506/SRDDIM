@@ -26,7 +26,7 @@ Example results obtained using the SRDDIM model:
 
 | Low-Resolution Image | Super-Resolution Image | Ground Truth |
 |----------------------|------------------------|--------------|
-| ![LR](image/730_set_4_4.jpg) | ![SR](image/730_set_16_16.jpg) | ![GT](image/730_set.jpg) |
+| ![LR](image/730_set_16_16.jpg) | ![SR](image/730_set_4_4.jpg) | ![GT](image/730_set.jpg) |
 
 ## References
 
